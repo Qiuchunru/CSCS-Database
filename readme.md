@@ -1,41 +1,42 @@
 # Country Soccer Club System (CSCS)
 
-![Database](https://img.shields.io/badge/Database-MySQL-blue)
+![Database](https://img.shields.io/badge/Database-MySQL%208.0-blue)
 ![Course](https://img.shields.io/badge/Course-COMP353-orange)
 ![University](https://img.shields.io/badge/University-Concordia%20University-red)
+![Semester](https://img.shields.io/badge/Semester-Summer%202026-green)
 
-## COMP 353 – Databases  
+# COMP 353 – Databases  
 ## Summer 2026 Warm-up Project
 
+
 ---
-### Team Members
 
-| Name | Student ID | 
-| :--- | :--- | 
-|  |  | 
-| Chunru Qiu | 40283505 | 
-|  |  | 
-|  |  | 
+# 1. Project Overview
 
-# 1. Project Description
+The **Country Soccer Club System (CSCS)** is a relational database application developed for a nonprofit soccer organization.
 
-The **Country Soccer Club System (CSCS)** is a relational database application developed for managing the operations of a nonprofit soccer club.
+The objective of this project is to design and implement a complete database system capable of managing the daily operations of a soccer club, including members, locations, personnel, teams, family relationships, payments, hobbies, and FIFA game participation.
 
-The system is designed to store, organize, and retrieve information related to club members, locations, personnel, teams, family relationships, payments, hobbies, and FIFA game participation.
+The system was designed using:
 
-The database supports the daily management activities of the soccer club, including:
+- Entity-Relationship (E/R) modeling
+- Relational schema conversion
+- MySQL database implementation
+- SQL queries and transactions
 
-- Managing the club headquarters and branches
-- Maintaining personnel information and employment history
-- Registering major and minor club members
-- Managing family members and guardians
-- Tracking member locations over time
-- Managing teams and team membership
-- Recording member hobbies
-- Maintaining membership payment information
-- Tracking FIFA game participation records
 
-The database was designed using the **Entity-Relationship (E/R) model**, converted into a relational schema, and implemented using **MySQL**.
+The database supports:
+
+- Club headquarters and branch management
+- Personnel employment history tracking
+- Major and minor member registration
+- Family member and guardian relationships
+- Member location history
+- Team organization
+- Hobby management
+- Membership payment tracking
+- FIFA game participation records
+
 
 ---
 
@@ -43,85 +44,119 @@ The database was designed using the **Entity-Relationship (E/R) model**, convert
 
 The main objectives of this project are:
 
-- Design an appropriate database model for the Country Soccer Club System.
-- Convert the E/R model into relational tables.
-- Implement the database using MySQL.
-- Populate each relation with representative data.
-- Develop SQL queries to answer business requirements.
-- Maintain data integrity using primary keys, foreign keys, and constraints.
+- Design an appropriate E/R model for the CSCS system.
+- Convert the E/R model into normalized relational tables.
+- Implement the database using MySQL 8.0.
+- Maintain data integrity using keys and constraints.
+- Populate tables with representative data.
+- Develop SQL queries required by the project specification.
+
 
 ---
 
-# 3. System Requirements
-
-## Database Management System
+# 3. Technologies Used
 
 
-MySQL 8.0+
-
-
-## Development Tools
-
-| Tool | Purpose |
+| Technology | Purpose |
 |---|---|
-| Visual Studio Code | SQL and documentation editing |
-| MySQL Workbench | Database execution and testing |
+| MySQL 8.0 | Database Management System |
+| MySQL Workbench | SQL execution and testing |
+| Visual Studio Code | SQL and documentation development |
 | PlantUML | ER Diagram generation |
 | Markdown | Project documentation |
 
+
 ---
 
-# 4. Project Directory Structure
+# 4. Project Structure
 
 
-CSCS_Project
+
+CSCS-Database
+
 │
 ├── README.md
 │
-├── ER_Diagram.puml
+├── ER_Diagram
+│ ├── CSCS_ER_Diagram.puml
+│ └── CSCS_ER_Diagram.png
 │
 ├── Relational_Schema.md
 │
 └── SQL
 │
 ├── create_database.sql
-├── create_tables.sql
 │
-├── insert_locations.sql
-├── insert_personnel.sql
-├── insert_club_members.sql
-├── insert_family_members.sql
-├── insert_hobbies.sql
-├── insert_personnel_assignment.sql
-├── insert_member_location_history.sql
-├── insert_family_location_history.sql
-├── insert_family_relationship.sql
-├── insert_teams.sql
-├── insert_team_members.sql
-├── insert_member_hobby.sql
-├── insert_payments.sql
-├── insert_fifa_games.sql
-├── insert_game_participation.sql
+├── Locations.sql
+├── Personnel.sql
+├── Personnel_Assignment.sql
+├── ClubMembers.sql
+├── FamilyMembers.sql
+├── FamilyRelationship.sql
+├── Family_Location_History.sql
+├── Member_Location_History.sql
+├── Hobbies.sql
+├── Member_Hobby.sql
+├── Payments.sql
+├── Teams.sql
+├── Team_Members.sql
+├── FIFA_Games.sql
+├── Game_Participation.sql
 │
-└── queries.sql
+└── queries
+├── Query_1.sql
+├── Query_2.sql
+├── Query_3.sql
+├── Query_4.sql
+├── Query_5.sql
+├── Query_6.sql
+├── Query_7.sql
+└── Query_8.sql
+
 
 
 ---
 
-# 5. Database Schema Overview
+# 5. Entity Relationship Diagram
 
-The CSCS database consists of multiple relations designed to represent different aspects of the soccer club.
+
+The database conceptual design was created using PlantUML.
+
+The ER diagram represents:
+
+- Entities
+- Attributes
+- Primary keys
+- Foreign keys
+- Relationship constraints
+
+
+![CSCS ER Diagram](ER_Diagram/CSCS_ER_Diagram.png)
+
+
+Source file:
+
+
+ER_Diagram/CSCS_ER_Diagram.puml
+
+
 
 ---
 
-## 5.1 Locations
+# 6. Database Schema
+
+
+The CSCS database consists of the following main relations:
+
+
+## Locations
 
 Stores information about club headquarters and branches.
 
 Attributes include:
 
 - Location ID
-- Location name
+- Name
 - Type (Head / Branch)
 - Address
 - City
@@ -129,23 +164,22 @@ Attributes include:
 - Postal code
 - Phone number
 - Website
-- Maximum capacity
+- Capacity
 
 
 ---
 
-## 5.2 Personnel
+## Personnel
 
-Stores information about all personnel working for the club.
+Stores information about all employees and volunteers.
 
 Examples:
 
-- General manager
+- General Manager
 - Administrator
 - Coach
 - Captain
-- Assistant coach
-- Other staff
+- Assistant Coach
 
 
 Maintained information:
@@ -160,42 +194,29 @@ Maintained information:
 
 ---
 
-## 5.3 Personnel Assignment
+## Club Members
 
-Maintains the working history of personnel.
+Stores all registered soccer club members.
 
-A personnel member can work at different locations during different time periods.
-
-Attributes:
-
-- Personnel ID
-- Location ID
-- Start date
-- End date
+Two categories are supported:
 
 
----
+### Major Members
 
-## 5.4 Club Members
-
-Stores all registered club members.
-
-The system supports two member types:
-
-### Major Member
-
-Members who are:
+Members aged:
 
 
 18 years old or above
 
 
-### Minor Member
 
-Members who are:
+### Minor Members
+
+Members aged:
 
 
 4 - 17 years old
+
 
 
 Stored information:
@@ -211,60 +232,16 @@ Stored information:
 
 ---
 
-## 5.5 Family Members
+## Family Members
 
-Stores parents, guardians, and other registered family members.
-
-Information includes:
-
-- Personal information
-- Contact information
-- Location information
+Stores parents, guardians, and other family members associated with minor members.
 
 
 ---
 
-## 5.6 Family Relationship
+## Payments
 
-Maintains relationships between family members and club members.
-
-Supported relationships:
-
-- Father
-- Mother
-- Grandfather
-- Grandmother
-- Tutor
-- Partner
-- Friend
-- Other
-
-
----
-
-## 5.7 Hobbies
-
-Stores available hobbies.
-
-Examples:
-
-- Soccer
-- Tennis
-- Swimming
-- Hockey
-- Golf
-- Volleyball
-
-
-A member can have multiple hobbies.
-
----
-
-## 5.8 Payments
-
-Stores membership payment information.
-
-Maintained attributes:
+Maintains membership payment information:
 
 - Payment date
 - Amount
@@ -281,129 +258,92 @@ Payment methods:
 
 ---
 
-## 5.9 Teams
+## Teams and FIFA Games
 
-Stores Boys and Girls soccer teams.
+The database manages:
 
-Each team belongs to one location.
-
----
-
-## 5.10 FIFA Games
-
-Stores FIFA game information:
-
-- Game date
-- Game location
-- Opponent
-- Final score
+- Boys teams
+- Girls teams
+- Team membership
+- FIFA game participation
+- Opponents
+- Scores
+- Game dates
 
 
 ---
 
-## 5.11 Game Participation
+# 7. Database Installation
 
-A relationship table connecting:
-
-
-Club Member
-|
-|
-FIFA Game
-|
-|
-Team
-
-
-It records which members participated in which games.
-
----
-
-# 6. Database Creation Instructions
 
 ## Step 1: Create Database
 
-Open MySQL Workbench.
 
-Execute:
+Open MySQL Workbench:
+
 
 ```sql
 CREATE DATABASE CSCS;
 
 USE CSCS;
 
-or run:
+or execute:
 
 SQL/create_database.sql
 Step 2: Create Tables
 
-Execute:
+Execute all table creation scripts inside:
 
-SQL/create_tables.sql
+SQL/
 
-This creates all database relations, including:
+The database includes:
 
 Primary keys
 Foreign keys
-Constraints
-Data types
+Unique constraints
+ENUM constraints
 Step 3: Insert Data
 
-The insertion scripts must be executed in the following order:
+Insert data following dependency order:
 
-1. insert_locations.sql
+Locations
+Personnel
+Club Members
+Family Members
+Hobbies
+Personnel Assignment
+Member Location History
+Family Location History
+Family Relationship
+Teams
+Team Members
+Member Hobby
+Payments
+FIFA Games
+Game Participation
 
-2. insert_personnel.sql
+Each relation contains representative tuples for testing.
 
-3. insert_club_members.sql
+8. SQL Queries
 
-4. insert_family_members.sql
+The project contains eight required queries:
 
-5. insert_hobbies.sql
-
-6. insert_personnel_assignment.sql
-
-7. insert_member_location_history.sql
-
-8. insert_family_location_history.sql
-
-9. insert_family_relationship.sql
-
-10. insert_teams.sql
-
-11. insert_team_members.sql
-
-12. insert_member_hobby.sql
-
-13. insert_payments.sql
-
-14. insert_fifa_games.sql
-
-15. insert_game_participation.sql
-
-Each relation contains at least 10 representative tuples as required by the project specification.
-
-7. SQL Queries
-
-All required project queries are included in:
-
-SQL/queries.sql
 Query 1
 
 Retrieve complete information for every location:
 
-Including:
+Includes:
 
 Location details
 General manager
 Number of personnel
-Number of club members
+Number of members
 Number of FIFA participants
 Query 2
 
-Retrieve all major club members who participated in FIFA games.
+Retrieve major members who participated in FIFA games.
 
-Information includes:
+Includes:
 
 Location
 Membership number
@@ -413,29 +353,20 @@ Status
 Number of games played
 Query 3
 
-Retrieve all members with at least four hobbies.
+Retrieve members with at least four hobbies.
 
-Information includes:
-
-Location
-Member information
-Age
-Number of hobbies
 Query 4
 
 Retrieve major members who never participated in FIFA games.
 
 Query 5
 
-Generate a report showing:
+Generate age statistics:
 
-Age -> Number of club members
-
-sorted by descending age.
-
+Age -> Number of members
 Query 6
 
-Retrieve major club members who are also family members and display information about associated children.
+Retrieve major members who are also family members and their associated children.
 
 Query 7
 
@@ -444,89 +375,58 @@ Calculate:
 Total membership fees
 Total donations
 
-for major members between:
+between:
 
 2023 - 2025
 Query 8
 
-Retrieve members who participated in:
+Retrieve members who participated in at least four FIFA games.
 
-4 or more FIFA games
-8. ER Diagram
+9. Data Integrity
 
-The ER diagram was created using PlantUML.
-
-File:
-
-ER_Diagram.puml
-
-To generate the diagram:
-
-Install PlantUML extension in VS Code.
-Open the .puml file.
-Run PlantUML Preview.
-Export the generated diagram.
-9. Data Integrity Constraints
-
-The database implements:
+The database enforces:
 
 Primary Keys
-
-Every entity contains a unique identifier.
 
 Examples:
 
 LocationID
 PersonnelID
 MemberID
+TeamID
 GameID
+Unique Constraints
+
+Applied to:
+
+Social Security Number
+Medicare Card Number
 Foreign Keys
 
-Relationships between tables are enforced using foreign keys.
-
 Examples:
-
-ClubMembers -> Locations
 
 Payments -> ClubMembers
 
 Game_Participation -> FIFA_Games
-Unique Constraints
 
-Implemented for:
-
-Social Security Number
-Medicare Card Number
-Relationship Constraints
+Team_Members -> Teams
+Historical Relationships
 
 The database maintains:
 
-Member location history
 Personnel working history
+Member location history
 Family relationships
-Team participation
-Game participation
+Team participation history
 10. Testing
 
-The database was tested using:
+Each relation was tested using:
 
 SELECT COUNT(*) FROM TableName;
 
-for every relation.
-
-Example:
-
-SELECT COUNT(*) 
-FROM Locations;
-
-Expected result:
-
-10
-
-Each relation contains sufficient data to test all required SQL queries.
+The database contains sufficient data to execute all required project queries.
 
 11. Contributors
-
 COMP353 Database Project Group
 
 Concordia University
@@ -535,15 +435,15 @@ Summer 2026
 
 12. Conclusion
 
-The CSCS database provides a complete relational database solution for managing a soccer club system.
+The Country Soccer Club System database provides a complete relational database solution for managing soccer club operations.
 
 The project demonstrates:
 
 Database modeling
-ER design
+ER diagram design
 Relational schema conversion
-SQL implementation
-Data manipulation
-Complex query development
+MySQL implementation
+SQL query development
+Data integrity management
 
 The final system satisfies the requirements specified in the COMP 353 Database course project.
