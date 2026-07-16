@@ -7,7 +7,14 @@
 # COMP 353 – Databases  
 ## Summer 2026 Warm-up Project
 
+### Team Members
 
+| Name | Student ID | 
+| :--- | :--- | 
+|  |  | 
+|  |  | 
+|  |  | 
+|  |  | 
 ---
 
 # 1. Project Description
