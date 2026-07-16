@@ -76,7 +76,6 @@ The repository contains the following files:
 
 
 ## ER Diagram
-# Entity Relationship Diagram
 
 
 The database conceptual design was created using PlantUML.
