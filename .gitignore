@@ -1,0 +1,11 @@
+# VS Code
+.vscode/
+
+# LaTeX temporary files
+*.aux
+*.log
+*.out
+*.synctex.gz
+
+# MySQL temporary files
+*.tmp
