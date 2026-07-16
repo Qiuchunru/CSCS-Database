@@ -92,11 +92,6 @@ The ER diagram represents:
 ![CSCS ER Diagram](ER_Diagram/CSCS_ER_Diagram.png)
 
 
-Source file:
-
-
-ER_Diagram/CSCS_ER_Diagram.puml
-
 Location:
 
 - ER_Diagram/CSCS_ER_Diagram.puml
