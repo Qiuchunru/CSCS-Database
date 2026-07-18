@@ -96,13 +96,13 @@ The ER diagram represents:
 - Relationship constraints
 
 
-![CSCS ER Diagram](ER_Diagram/CSCS_ER_Diagram.png)
+![CSCS ER Diagram](Conceptual ER Diagram.png)
 
 
 Location:
 
-- ER_Diagram/CSCS_ER_Diagram.puml
-- ER_Diagram/CSCS_ER_Diagram.png
+- Conceptual ER Diagram.drawio
+- Conceptual ER Diagram.png
 
 
 The PlantUML file is the source file used to generate the ER diagram image.
