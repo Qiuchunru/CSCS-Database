@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="CSCS E-R Diagram" id="pwU9avmWXF2Arnw-1prJ">
-    <mxGraphModel dx="1943" dy="1990" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1502" dy="1668" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -592,6 +592,24 @@
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <mxPoint x="560" y="580" as="sourcePoint" />
             <mxPoint x="400" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="monzx_IuwkOex6C4u8Vb-210" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;phoneNo.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="32" width="135" x="-220" y="-192" as="geometry" />
+        </mxCell>
+        <mxCell id="monzx_IuwkOex6C4u8Vb-211" edge="1" parent="1" source="monzx_IuwkOex6C4u8Vb-210" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.369;entryDx=0;entryDy=0;entryPerimeter=0;" target="monzx_IuwkOex6C4u8Vb-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="210" y="-140" as="sourcePoint" />
+            <mxPoint x="260" y="-190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="monzx_IuwkOex6C4u8Vb-212" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="installmentNumber" vertex="1">
+          <mxGeometry height="40" width="140" x="210" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="monzx_IuwkOex6C4u8Vb-213" edge="1" parent="1" source="monzx_IuwkOex6C4u8Vb-212" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.474;entryY=0.976;entryDx=0;entryDy=0;entryPerimeter=0;" target="monzx_IuwkOex6C4u8Vb-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="840" as="sourcePoint" />
+            <mxPoint x="370" y="740" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
