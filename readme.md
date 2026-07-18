@@ -70,7 +70,7 @@ The objectives of this project are:
 | MySQL 8.0 | Database implementation |
 | MySQL Workbench | SQL execution and testing |
 | Visual Studio Code | SQL and documentation editing |
-| PlantUML | ER diagram generation |
+| Draw.io | ER diagram generation |
 | Markdown | Documentation |
 
 
@@ -85,7 +85,7 @@ The repository contains the following files:
 ## ER Diagram
 
 
-The database conceptual design was created using PlantUML.
+The database conceptual design was created using Draw.io.
 
 The ER diagram represents:
 
@@ -105,7 +105,7 @@ Location:
 - Conceptual ER Diagram.png
 
 
-The PlantUML file is the source file used to generate the ER diagram image.
+The Draw.io file is the source file used to generate the ER diagram image.
 
 
 ## Relational Schema
