@@ -13,7 +13,7 @@
 | :--- | :--- | 
 | Aaida Hossain |  | 
 | Chunru Qiu | 40283505 | 
-| Jingyuan zhang |  | 
+| Jingyuan zhang | 40257596 | 
 | Yuqian Cai |  | 
 ---
 
